@@ -1,0 +1,64 @@
+.home {
+    display: flex;
+    flex-direction: row;
+    column-gap: 3rem;
+    padding: 1rem;
+}
+
+.home__header {
+    display: flex;
+    flex-direction: column;
+    max-width: 45rem;
+    row-gap: 1rem;
+}
+
+.header__title {
+    font-size: 7rem;
+    word-wrap: break-word;
+}
+
+.home__cta {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.cta__button {
+    display: inline-block;
+    border-radius: 4px;
+    background-color: #4CAF50;
+    border: none;
+    color: #FFFFFF;
+    text-align: center;
+    font-size: 28px;
+    padding: 20px;
+    width: 100%;
+    transition: all 0.5s;
+    cursor: pointer;
+    margin: 5px;
+  }
+  
+  .cta__button span {
+    cursor: pointer;
+    display: inline-block;
+    position: relative;
+    transition: 0.5s;
+  }
+  
+  .cta__button span:after {
+    content: '\00bb';
+    position: absolute;
+    opacity: 0;
+    top: 0;
+    right: -20px;
+    transition: 0.5s;
+  }
+  
+  .cta__button:hover span {
+    padding-right: 25px;
+  }
+  
+  .cta__button:hover span:after {
+    opacity: 1;
+    right: 0;
+  }

@@ -1,0 +1,42 @@
+.meals {
+    display: flex;
+    flex-direction: column;
+    row-gap: 1rem;
+    padding: 0 1rem;
+}
+
+.meals__list {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    flex-wrap: wrap;
+    column-gap: 4rem;
+    row-gap: 2rem;
+    margin-top: 5rem;
+    cursor: pointer;
+}
+
+.meals__item {
+    transition: 0.3s;
+    max-width: 320px;
+}
+
+.meals__item a {
+    text-decoration: none;
+    font-weight: 700;
+    font-size: 1.5rem;
+    color: black;
+    letter-spacing: .05em;
+}
+
+.meals__item img {
+    max-width: 320px;
+}
+
+.meals__item:hover {
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+}
+
+.meals__header {
+    padding: 1rem;
+}
